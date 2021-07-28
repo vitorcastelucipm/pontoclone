@@ -1,0 +1,23 @@
+.container {
+  width: 501px;
+  height: 456px;
+}
+
+.title {
+  color: #123442;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.title_content {
+  justify-content: space-between;
+}
+
+.pontuality {
+  border-radius: 2px;
+  padding: 30px;
+  padding-right: 7px;
+  padding-left: 7px;
+  width: 481px;
+  height: 344px;
+}

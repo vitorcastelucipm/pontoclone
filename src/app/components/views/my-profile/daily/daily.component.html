@@ -1,0 +1,16 @@
+<div class="container">
+  <mat-card class="daily">
+    <div class="content">
+      <ul class="content_tabs">
+        <li [ngClass]="{ active: tab.active }" (click)="changeTab(tab.id)" *ngFor="let tab of tabs">
+          {{ tab.label }}
+        </li>
+      </ul>
+    </div>
+    <div class="time_card">
+      <app-last-register *ngIf="tabs[0].active"></app-last-register>
+      <app-journey *ngIf="tabs[1].active"></app-journey>
+      <app-closing-mirror *ngIf="tabs[2].active"></app-closing-mirror>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,25 @@
+<mat-list>
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-list-item *ngFor="let card of time_cards">
+    <mat-divider [inset]="true"></mat-divider>
+    <div class="row">
+      <div class="line">
+        <mat-icon [ngClass]="card.id == 2 ? 'circle-out': 'circle-in'">{{card.circle}}</mat-icon>
+        <mat-icon [ngClass]='card.icon' aria-hidden="false">{{card.icon}}</mat-icon>
+      </div>
+      <div class="text-wrap">
+        <div class="title">
+          <div class="hour">
+            <span>{{card.time}}</span>
+            <p>{{card.date}}</p>
+          </div>
+          <div class="message">
+            <p>{{card.message}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-divider [inset]="true"></mat-divider>
+  </mat-list-item>
+
+</mat-list>

@@ -1,0 +1,27 @@
+<mat-list>
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-list-item *ngFor="let journey of journeys">
+    <mat-divider [inset]="true"></mat-divider>
+    <div class="row">
+      <div class="line">
+        <mat-icon class="circle">{{journey.circle}}</mat-icon>
+        <mat-icon class='check' aria-hidden="false">{{journey.icon}}</mat-icon>
+      </div>
+      <div class="text-wrap">
+        <div class="title">
+          <div class="hour">
+            <span>{{journey.date}}</span>
+            <p>{{journey.title}}</p>
+          </div>
+          <div class="message">
+            <p>{{journey.message}}</p>
+          </div>
+          <div class="message time">
+            <p>Hora extra: {{journey.extra_time}} - Hora faltante: {{journey.missing_time}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mat-divider [inset]="true"></mat-divider>
+  </mat-list-item>
+</mat-list>

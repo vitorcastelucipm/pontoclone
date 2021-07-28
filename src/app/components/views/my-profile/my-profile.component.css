@@ -1,0 +1,30 @@
+.container {
+  background-color: #E5E5E5;
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  text-align: start;
+  margin-bottom: 5px;
+}
+
+.header h3 {
+  color: #123442;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+mat-grid-tile {
+  background-color: aqua;
+}

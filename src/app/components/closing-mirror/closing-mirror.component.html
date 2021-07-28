@@ -1,0 +1,27 @@
+<mat-list>
+  <mat-divider [inset]="true"></mat-divider>
+  <mat-list-item *ngFor="let closing_mirror of closing_mirrors">
+    <mat-divider [inset]="true"></mat-divider>
+    <div class="row">
+      <div class="line">
+        <mat-icon class="circle">{{closing_mirror.circle}}</mat-icon>
+        <mat-icon class='schedule' aria-hidden="false">{{closing_mirror.icon}}</mat-icon>
+      </div>
+      <div class="text-wrap">
+        <div class="title">
+          <div class="hour">
+            <p>Período </p>
+            <span>{{closing_mirror.date}}</span>
+          </div>
+          <div class="message">
+            <p>{{closing_mirror.resume}}</p>
+          </div>
+        </div>
+        <div class='button'>
+          <button mat-raised-button color="basic">Ver e assinar</button>
+        </div>
+      </div>
+    </div>
+    <mat-divider [inset]="true"></mat-divider>
+  </mat-list-item>
+</mat-list>

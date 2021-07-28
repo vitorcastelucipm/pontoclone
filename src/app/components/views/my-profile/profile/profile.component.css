@@ -1,0 +1,103 @@
+.container {
+  width: 768px;
+  display: flex;
+  flex: 1;
+  height: 446px;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 2px;
+  padding: 30px;
+}
+
+.content {
+  width: 100%;
+}
+
+.avatar {
+  background-image: url("src/assets/Satou_Kazuma.png");
+  background-size: cover;
+  width: 128px;
+  height: 144px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: #123442;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+
+.shift {
+  line-height: 1.5;
+  font-size: 14px;
+  color: #123442;
+  text-align: center;
+  width: 100%;
+}
+
+.divider {
+  border-bottom: 1px solid #efeeea;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 55px;
+}
+
+.bottom-left {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0;
+}
+
+.bottom-rigth {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0;
+  color: #28a745;
+}
+
+.icons {
+  color: #f05a4e;
+}
+
+.title-bottom {
+  color: #123442;
+  font-weight: 700;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 23px;
+}
+
+.list-status-data {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  color: #123442;
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  padding-right: 10px;
+}
+
+span {
+  font-weight: 400;
+  font-size: 14px;
+}

@@ -1,0 +1,21 @@
+<mat-sidenav-container class="container" autosize>
+  <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="false" fixedTopGap="64">
+    <mat-nav-list class="nav-list">
+      <a mat-list-item *ngFor="let tab of tabs" [ngClass]="{ active: tab.active }">
+        <mat-icon aria-hidden="false">{{tab.icon}}</mat-icon>
+        <p *ngIf="isShowing==true">{{tab.label}}</p>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <app-my-profile *ngIf="tabs[0].active"></app-my-profile>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<div class="toggle-menu" [ngStyle]="{'margin-left': isShowing ?  '143px' : '66px'}"  (click)="toggleSidenav()">
+  <mat-icon  *ngIf="isShowing==false" class="material-icons-outlined">arrow_forward_ios</mat-icon>
+  <mat-icon  *ngIf="isShowing==true" class="material-icons-outlined" >arrow_back_ios</mat-icon>
+</div>
+
+
+
+

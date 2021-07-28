@@ -1,0 +1,79 @@
+
+.chair{
+  display: flex;
+  align-self: center;
+  margin-left: -16px;
+  color: #123442;
+}
+
+.work_outline{
+  display: flex;
+  align-self: center;
+  margin-left: -16px;
+  color:#EFEEEA
+}
+
+.circle-in{
+  font-size: 40px;
+  color:#03a487;
+}
+.circle-out{
+  font-size: 40px;
+  color: #EFEEEA
+}
+
+.line{
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  font-size: 20px;
+  display: flex;
+  color: #fff;
+}
+
+.text-wrap{
+  padding: 5px;
+  height: 63px !important;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #123442;
+  width: 802px;
+  height: 49px;
+}
+
+.hour{
+  font-size: 14px;
+  align-items: center ;
+  flex-wrap: wrap ;
+  display: flex ;
+  font-family: 'Open Sans',sans-serif,Roboto;
+  height: 28px;
+}
+
+.message{
+  font-family: 'Open Sans',sans-serif,Roboto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+mat-list-item{
+  width: 876px !important;
+  height: 76px !important;
+}
+.row{
+  display: flex;
+  width: 862px;
+  height: 68px;
+  align-items: center;
+}
+
+.hour span{
+  padding: .25rem;
+  color: #123442;
+  background: #dbd9d2;
+  margin-right: .5rem;
+  border-radius: .25rem;
+}

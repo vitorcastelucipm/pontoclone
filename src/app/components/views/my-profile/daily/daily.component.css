@@ -1,0 +1,49 @@
+.container {
+  width: 1284px;
+  height: 292px;
+}
+
+.daily {
+  border-radius: 2px;
+  padding: 30px;
+  padding-right: 7px;
+  padding-left: 7px;
+  display: flex;
+}
+
+.content {
+  width: 271px;
+  height: 230px;
+}
+
+.content_tabs {
+  display: flex;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.content_tabs li {
+  list-style: none;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: #123442;
+  background-color: #efeeea;
+  position: relative;
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+  background-color: #03a487 !important;
+  color: #fff !important;
+}
+
+.time_card {
+  width: 936px;
+  height: 230px;
+  padding: 0 30px ;
+}
